@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab04</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1, h2, h3, h5, div {
+            margin: 0px;
+        }
+        body{
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+  
+        .nav{
+            background-color: #333;
+            overflow: hidden;
+        }
+        .nav a {
+            color: #f2f2f2;
+            text-decoration: none;
+            display: block;
+            float: left;
+            padding: 14px 16px;
+            text-align: center;
+        }
+        .nav a :hover{
+            background-color: #f2f2f2;
+            color: #333 ;
+        }
+
+        .header, .footer{
+            text-align: center;
+        }
+
+        .card{
+            background-color: #a2b9bc;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        #left_column{
+            float: left;
+            width: 70%;
+        }
+        #right_column{
+            padding-right: 10px;
+            float: left;
+            width: 30%;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        .footer{
+            clear: both;
+        }
+
+        /*  if width < 600px, the new rule will apply */
+        /* @media screen and (max-width: 600px) and (min-width: 300px) {
+            #left_column, #right_column{
+                width: 100%;
+            }
+            #right_column{
+                padding: 0px;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            .nav a{
+                /* most priority */
+                /* float: none !important;
+            }
+        } */ 
+
+        @media screen and (max-width: 300px){
+            #left_column, #right_column{
+                width: 100%;
+            }
+            #right_column{
+                padding: 0px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class = "header">
+        <h1>My Website</h1>
+        <p>Should be responsive</p>
+    </div>
+    <!-- Navigation -->
+    <div class = "nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#" style="float: right;">Link</a>
+    </div>
+    <!-- Content block -->
+    <div id="left_column">
+        <div class ="card">
+            <h2>Title Heading</h2>
+            <h5>Title Description</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo in modi dolorum ipsum voluptas ratione facere reprehenderit dignissimos fuga soluta.</p>
+        </div>
+        <div class ="card">
+            <h2>Title Heading</h2>
+            <h5>Title Description</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo in modi dolorum ipsum voluptas ratione facere reprehenderit dignissimos fuga soluta.</p>
+            <img src="./image.jpg" width="200" height="250">
+            <img src="./image.jpg" width="200" height="250">
+        </div>
+    </div>
+
+    <div id="right_column">
+        <div class ="card">
+            <h2>Title Heading</h2>
+            <h5>Title Description</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo in modi dolorum ipsum voluptas ratione facere reprehenderit dignissimos fuga soluta.</p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class = "footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
